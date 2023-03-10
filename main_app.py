@@ -1,5 +1,5 @@
 
-
+from operator import index
 import streamlit as st
 import sys
 import pandas_profiling
