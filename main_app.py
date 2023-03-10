@@ -62,7 +62,7 @@ if choose == "Model Building":
             # clf = LazyClassifier(verbose=0, ignore_warnings=True, custom_metric=None)
             # models, predictions = clf.fit(X_train, X_test, y_train, y_test)
             # st.dataframe(models)
-            setup(data=X, target=y, normalize=True, train_size=0.8)
+            setup(data=X, target=y)
 
             #
             best_model_classification = compare_models()
@@ -93,7 +93,7 @@ if choose == "Model Building":
             # clf = LazyRegressor(verbose=0, ignore_warnings=True, custom_metric=None)
             # models, predictions = clf.fit(X_train, X_test, y_train, y_test)
             # st.dataframe(models)
-            setup(data=X, target=y, train_size=0.8, normalize=True)
+            setup(data=X, target=y)
 
             #
             best_model_regression = compare_models()
