@@ -79,7 +79,7 @@ if choose == "Model Building":
             st.title("Model Predictions")
             st.dataframe(predict_model(best_model_classification))
             predictions = predict_model(best_model_classification, data=df_csv, raw_score=True)
-            st.dataframe(predictions).head(20)
+            #st.dataframe(predictions).head(20)
 
     if option == "Regression":
         from pycaret.regression import setup, compare_models, pull, save_model, load_model, plot_model, predict_model
@@ -108,7 +108,7 @@ if choose == "Model Building":
             st.title("Model Predictions")
             st.dataframe(predict_model(best_model_regression))
             predictions = predict_model(best_model_regression, data=df_csv)
-            st.dataframe(predictions).head(20)
+            #st.dataframe(predictions).head(20)
 
     if option == "Anomaly Detection":
         from pycaret.anomaly import setup, create_model, models, plot_model, save_model, assign_model, predict_model
